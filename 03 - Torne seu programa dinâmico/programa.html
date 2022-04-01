@@ -3,14 +3,17 @@
 <script>
 
     var ano = 2022;
-    document.write("Matheus tem " + (ano - 1994) + " anos", "<br");
 //Ao realizar a soma de uma string com um number o Js, transforma o number em string e faz a concatenação
+    document.write("Matheus tem " + (ano - 1994) + " anos", "<br");
     document.write("Flávio tem " + (ano - 1974) + " anos", "<br>");
+// À partir deste ponto a variável ano será 2023, mas não impacta nos valores anteriores do ano;
+    var ano = 2023
     document.write("Márcio tem " + (ano - 1942) + " anos", "<br>");
 
     var idadeFlavio = 48;
     var idadeMarcio = 80;
-    var media = (idadeFlavio + idadeMarcio)/2;
+    var idadeMatheus = 27;
+    var media = (idadeFlavio + idadeMarcio + idadeMatheus)/3;
 
     document.write("A média das idades é " + Math.round(media));
 </script>
