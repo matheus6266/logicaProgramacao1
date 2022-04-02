@@ -14,16 +14,18 @@
 
     }
 
+
     function calculoImc(peso, altura){
         imc = peso/(altura*altura);
-        mostra("O cálculo do imc é " + Math.round(imc));
+        //mostra("O cálculo do imc é " + Math.round(imc));
         return imc;
     }
+    
+    var nome = prompt("Usuário, por favor, informe o seu nome");
+    var pesoInformado = prompt(nome + " , informe o seu peso");
+    var alturaInformada = prompt(nome + ", informe a sua altura");
+    var imcCalculado = calculoImc(pesoInformado, alturaInformada);
 
-    var imcFlavio = calculoImc(80, 1.87);
-    var imcAmigo = calculoImc(87, 1.70);
-    var totalImc = imcFlavio + imcAmigo;
-
-    document.write("O valor de imc total é: " + Math.round(totalImc));
+    document.write(nome + ", o seu imc é: " + Math.round(imcCalculado));
 
 </script>
