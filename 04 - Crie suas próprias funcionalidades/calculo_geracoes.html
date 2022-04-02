@@ -1,0 +1,22 @@
+<meta charset = "UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br");
+    }    
+
+    function mostra(numeroGeracoes) {
+
+        document.write("A quantidade de gerações do descobrimento do Brasil até hoje é " + numeroGeracoes);
+        pulaLinha();
+        }
+
+    var ano = 2022;
+    var diferencaAnos = (ano - 1500);
+    var numeroGeracoes = diferencaAnos/28;
+
+    mostra(Math.round(numeroGeracoes));
+
+</script>
+
