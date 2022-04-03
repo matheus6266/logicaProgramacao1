@@ -1,0 +1,35 @@
+<meta charset = "UTF">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+
+    var numero = 1;
+
+    while(numero <= 100){
+    
+    var restoDivisao = numero % 2;
+    console.log(restoDivisao);
+
+        if(restoDivisao == 0){
+            mostra("O número " + numero + " é par");
+            numero++;
+        }else {
+            numero++;
+        }
+            
+        
+    }
+
+    mostra("Fim");
+
+
+</script>
