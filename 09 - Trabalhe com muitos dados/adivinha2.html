@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o seu segredo</button>
+
+<script>
+    var segredos = [5, 7, 10, 2, 3];
+
+    var input = document.querySelector("input");
+    // Neste passo estamos criando um foco na caixa quando o usuário recarregar a página.
+    input.focus();
+
+    function verifica(){
+
+        var achou = false;
+
+        for(posicao = 0; posicao < segredos.length; posicao ++){
+
+            if (input.value == segredos[posicao]){
+            alert("Você acertou !!!");
+            achou = true;
+            break;
+            }
+        }
+        
+        if (achou == false){
+            alert("Você errou !!");
+        }
+    }
+
+       
+    // Neste passo estamos zerando o campoa para digitação do valor
+    input.value = "";
+    // Neste passo estamos criando um foco na caixa de digitação quando o usuário aperta o botão
+    input.focus();
+
+    var button = document.querySelector("button");
+
+// Ao clicar no botão estamos salvando na variável button o código da função verifica.
+    button.onclick = verifica;
+
+
+</script>
