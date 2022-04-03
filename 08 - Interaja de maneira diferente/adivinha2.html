@@ -4,9 +4,11 @@
 <button>Compare com o seu segredo</button>
 
 <script>
-    var segredo = 5;
+    var segredo = Math.round(Math.random()*10);
 
     var input = document.querySelector("input");
+    // Neste passo estamos criando um foco na caixa quando o usuário recarregar a página.
+    input.focus();
 
     function verifica(){
 
@@ -15,6 +17,11 @@
         } else {
             alert("Você errou !!");
         }
+    
+    // Neste passo estamos zerando o campoa para digitação do valor
+    input.value = "";
+    // Neste passo estamos criando um foco na caixa de digitação quando o usuário aperta o botão
+    input.focus();
     }
 
     var button = document.querySelector("button");
