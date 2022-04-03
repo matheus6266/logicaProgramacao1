@@ -1,0 +1,26 @@
+<meta charset = "UTF-8">
+
+<script>
+
+    function pulaLinha(){
+
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+
+    var numeroPensado = 5;
+    var numeroDigitado = parseInt(prompt("Digite o seu palpite"));
+
+    if(numeroDigitado == numeroPensado){
+        mostra("Parabéns, você acertou");
+    } else {
+        mostra("Não foi desta vez");
+    }
+
+</script>
