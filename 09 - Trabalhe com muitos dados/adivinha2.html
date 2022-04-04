@@ -1,10 +1,27 @@
 <meta charset="UTF-8">
 
-<input/>
+<input>
 <button>Compare com o seu segredo</button>
 
 <script>
-    var segredos = [5, 7, 10, 2, 3];
+
+    function sorteia () {
+
+        return Math.round(Math.random()*10);
+    }
+
+    function sorteiaNumeros (quantidade) {
+
+        var segredos = [];
+        var numero = 1;
+
+        while (numero <= quantidade) {
+
+            segredos.push(sorteia());
+        }
+
+    }
+    var segredos = sorteiaNumeros(3);
 
     var input = document.querySelector("input");
     // Neste passo estamos criando um foco na caixa quando o usuário recarregar a página.
